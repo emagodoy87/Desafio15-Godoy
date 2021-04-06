@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightskyblue;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+"header header"
+"luifa luifa"
+"noticias noticias"
+"footer footer";
+    grid-template-rows: 0.1fr 1fr 0.4fr 0.2fr; 
+    grid-template-columns: 10% auto 15% 0s;
+}
+.border {
+    border: 1px solid black;
+}
+header nav{
+    background-color: white;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    grid-area: header;
+    padding: 10px;
+
+}
+
+section#noticias {
+    grid-area: noticias;
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+.centrado{
+    text-align: center;
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right,blue  ,lightskyblue);
+        
+    }
+.formato-foto{
+    text-align: center;
+}
+section#presidente {
+    grid-area: luifa;     
+}
+section article img{
+    margin: 3.5%;
+}
+footer {
+    grid-area: footer;
+}
+
+.bg-contacto{
+    background-color: lightskyblue;
+}
+
+
+    
