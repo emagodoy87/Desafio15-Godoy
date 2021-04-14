@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body_predio{
+    background-color: mediumaquamarine;
+}
+body{
+    background-image: url(https://cdnmd.lavoz.com.ar/sites/default/files/styles/width_1072/public/nota_periodistica/00020589-14_1554680852.jpg);
+    background-size: cover;
+
+}
+
+#grilla {
+display: grid;
+grid-template-areas:
+"header header"
+"luifa luifa"
+"noticias noticias"
+"footer footer";
+    grid-template-rows: 0.1fr 1fr 0.4fr 0.2fr; 
+    grid-template-columns: 10% auto 15% 0s;
+}
+.border {
+    border: 1px solid black;
+    background-color: white;
+}
+header nav{
+    background-color: white;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    grid-area: header;
+    padding: 10px;
+
+}
+
+section#noticias {
+    grid-area: noticias;
+    background-color:lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.centrado{
+    text-align: center;
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right,blue  ,lightskyblue);
+}
+.formato-foto{
+    background-color: white;
+    text-align: center;
+}
+section#presidente {
+    grid-area: luifa;     
+}
+section article img{
+    margin: 3.5%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+}
+
+.bg-contacto{
+    background-color: lightskyblue;
+}
+
+.futbol_femenino{
+    background-color: lightskyblue;
+}
+    
+.gradiente_contacto{
+    text-align: center;
+        height: 50px;
+        width: 50%;
+        margin: 0 auto;
+        background-image: linear-gradient(to right,blue  ,lightskyblue);
+}
+.negrita{
+    font-weight: bold;
+}
+.formato_img{
+    margin:0,0,0,20px
+    
+}
+#Institucionales{
+    background-color: lightskyblue;
+}
+.terminos{
+    background-color: lightskyblue;
+    width: 30vh;
+}
+.predio-centrado{
+    text-align: center;
+}
+.seccion_predio1{
+    background-color: white;
+}
+.fondo_predio{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fondo_femenino{
+    background-color: white;
+}
+
+.fondo_femenino_titulo{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.goles_belgrano{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.videos_formato{
+    background-color: white;
+    border: 2px solid black;
+}
